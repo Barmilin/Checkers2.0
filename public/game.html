@@ -1,0 +1,40 @@
+<DOCTYPE HTML>
+  <head>
+    <title>Game</title>
+    <link rel="stylesheet" href="/static/game.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="next-player counter">
+      <div class="occupied whitePiece" id="next-player"></div>
+      Player
+    </div>
+    <div class="game" id="game"></div>
+    <div class="counter">
+      <div>
+        <div class="occupied whitePiece"></div>
+        <span id="white-player-count-pieces">10</span>
+      </div>
+      <div>
+        <div class="occupied blackPiece"></div>
+        <span id="black-player-count-pieces">10</span>
+      </div>
+    </div>
+  </div>
+  <div id="easyModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-body">
+            <p>The <strong id="winner"></strong> player won the game !!</p>
+            <p> <span id="loser"></span>, whould you take your revenge ???</p>
+
+            <div class="btn-container">
+              <button class="btn" onclick="location.reload()">Yes </button>
+              <button class="btn" onclick="modalClose()">No</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="/scripts/checkers.js"></script>
+  <script src="/scripts/info.js"></script>
+</body> 
+</html>
